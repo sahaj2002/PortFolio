@@ -2,6 +2,12 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
 #Home {
     background-color: rgb(173, 193, 198);
     padding-bottom: 1cm;
@@ -30,6 +36,9 @@ body {
 .topdiv {
     float: right;
     padding-right: 1cm;
+    
+
+
     /* font-style: oblique;
     font-size: 15px; */
 }
@@ -145,13 +154,14 @@ h2 {
     border-radius: 6px;
     text-align: center;
     margin: 50px;
-    padding: 10px;
+    /* padding: 10px; */
     width: 2in;
     font-size: 20px;
     box-shadow: 0 3px 10px gray;
 }
 .skill:hover{
-    border: 5px solid gray;;
+    border: 5px solid rgb(134, 176, 187);
+    transform: translateY(-10px);
 }
 
 .skill img {
