@@ -1,3 +1,23 @@
+function big(x) {
+
+  x.style.backgroundColor = "orange";
+  x.style.transition = "all 1s ease-in-out";
+  x.style.transform = "rotate(360deg)";
+  x.style.border = "5px solid black";
+  x.style.borderRadius = "50%";
+  x.style.boxShadow = "10px 10px 5px grey";
+  x.style.height = "500px";
+  x.style.width = "500px";
+  }
+  function small(x) {
+  x.style.height = "400px";
+  x.style.width = "400px";
+  x.style.padding = "10px";
+  x.style.backgroundColor = "powderblue"
+  x.style.transition = "all 3s ease-in-out";
+  x.style.transform = "rotate(-360deg)";
+  }
+
 function addRecommendation(){
     // Get the message of the new recommendation
     let recommendation = document.getElementById("new_recommendation");
