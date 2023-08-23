@@ -1,7 +1,7 @@
 function big(x) {
 
   x.style.backgroundColor = "orange";
-  x.style.transition = "all 1s ease-in-out";
+  x.style.transition = "all 2s ease-in-out";
   x.style.transform = "rotate(360deg)";
   x.style.border = "5px solid black";
   x.style.borderRadius = "50%";
