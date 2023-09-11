@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var myInterval = setInterval(slideshow, 3000);
 
 function slideshow() {
@@ -42,6 +43,12 @@ function big(x) {
 
   x.style.backgroundColor = "orange";
   x.style.transition = "all 1s ease-in-out";
+=======
+function big(x) {
+
+  x.style.backgroundColor = "orange";
+  x.style.transition = "all 2s ease-in-out";
+>>>>>>> bd19158f4eafc55c453768cbdaccf433a80dd6f2
   x.style.transform = "rotate(360deg)";
   x.style.border = "5px solid black";
   x.style.borderRadius = "50%";
