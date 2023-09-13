@@ -101,9 +101,10 @@ h2 {
     margin-left: 20px;
 } */
 
+
 .profile_image {
     width: 400px;
-    border: 5px solid black;
+
     border-radius: 50%;
     box-shadow: 10px 10px 5px grey;
     /* height: fit-content; */
