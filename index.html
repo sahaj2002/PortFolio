@@ -17,18 +17,19 @@
                     <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBpRlhrsnrfhzVrmlRdcxBVDpZDwjvzLjNDQKcRbvdMhmttRRNzqxvzbxvzmvjCkgWsCgjv"id="email_id">
                         pratyansh35@gmail.com</a>
                 </div>
+
                 <div style="clear: both;"></div>
 
                 <div class="contact_info">
                     <img src="images/phone_icon2.gif" alt="https://icons8.com/icon/set/phone/ios" width="fi">
                     <a href="tel:+917007254934" id="phone_no">+917007254934</a>
-                    
                 </div>
             </div>
+
             <div class="topdiv">
-                <a class="topmenu" href="#about-me">About Me</a>
                 <a class="topmenu" href="#skills">Skills</a>
                 <a class="topmenu" href="#all-Projects">Projects</a>
+                <a class="topmenu" href="#Certify">Certificates</a>
                 <a class="topmenu" href="#Recommend_form">Recommendation</a>
             </div>
         </div>
@@ -104,7 +105,7 @@
             </div>
         </div>
     </section>
-    <section id="all-Projects" class="all-projects">
+    <section id="all-Projects" class="all-Projects">
         <h2>Projects</h2>
         <div style="clear: both;"></div>
 
@@ -134,10 +135,50 @@
             </div>
         </div>
     </section>
+    <!-- Certificates -->
+    
 
-    <!-- Recommendation -->
+   <section id="Certify">
+        <h2>Certificates</h2>
+        <div class="Certification">
+            <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+            <div class="certificate-container">
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <span class="certificate-tag">GFG</span>
+                        <img src="images/certificatess/gfg_Android.png" class="certificate-thumb" alt="Think like  Monk -Jay Shetty">
+                        <button class="card-btn" onclick="redirectToWeb(2)">Verify</button>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <span class="certificate-tag">Coursera</span>
+                        <img src="images/certificatess/Coursera_Web.png" class="certificate-thumb" alt="Think like  Monk -Jay Shetty">
+                        <button class="card-btn" onclick="redirectToWeb(3)">Verify</button>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                    <span class="certificate-tag">Coursera</span>
+                    <img src="images/certificatess/Coursera_Os.png" class="certificate-thumb" alt="Think like  Monk -Jay Shetty">
+                    <button class="card-btn" onclick="redirectToWeb(1)">Verify</button>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <span class="certificate-tag">Coursera</span>
+                        <img src="images/certificatess/Coursera_Statics.png" class="certificate-thumb" alt="Think like  Monk -Jay Shetty">
+                        <button class="card-btn" onclick="redirectToWeb(4)">Verify</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+<!-- Recommendation -->
+    <h2>Recommendations</h2>
     <section id="recommendations">
-        <h2>Recommendations</h2>
+        
         <div style="clear: both;"></div>
         
         <div class="all-recommendations" id="all-recommendations" >
@@ -171,7 +212,7 @@
                 <input type="text" placeholder="Name(optional)"> <br>
                 <textarea id="new_recommendation" class="new_recommendation" placeholder="Message" cols="500" rows="10"></textarea>
                 <div class="flex-center">
-                   <button id="recommend_btn"  onclick="addRecommendation()">Submit</button> 
+                <button id="recommend_btn"  onclick="addRecommendation()">Submit</button> 
                 </div>
             </fieldset>
         </div>
@@ -206,5 +247,6 @@
             </a>
         </p>
 </footer>
+
 </body>
 </html>

@@ -13,7 +13,41 @@ function slideshow() {
         i.src = "images/myPic3.png";
     }
 }
+function redirectToWeb(x) {
+    switch (x) {
+        case 1:
+            window.open("https://www.coursera.org/account/accomplishments/certificate/HL8QWQRND8JU");
+            break;
+        case 2:
+            window.open("");
+            break;
+        case 3:
+            window.open("https://www.coursera.org/account/accomplishments/certificate/LC688NCZTLWK");  
+            break;
+        case 4:
+            window.open("https://www.coursera.org/account/accomplishments/certificate/V389EKFJPREU");    
+            break;
+    }         
+}
 
+
+// Certificate
+const productContainers = [...document.querySelectorAll('.certificate-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimenstions = item.getBoundingClientRect();
+    let containerWidth = containerDimenstions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
 
 // function cardsb(y) {
 //   y.style.backgroundColor = "orange";
