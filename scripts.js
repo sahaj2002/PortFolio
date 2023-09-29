@@ -3,14 +3,14 @@ var myInterval = setInterval(slideshow, 3000);
 function slideshow() {
     var i = document.getElementById("Imagey");
 
-    if (i.src.match("images/myPic3.png")) {     
+    if (i.src.match("images/myPic1.png")) {     
       i.src = "images/myPic2.png";
     } else if (i.src.match("images/myPic2.png")) { 
-        i.src = "images/myPic4.jpg";
-    } else if (i.src.match("images/myPic4.jpg")) {
-      i.src = "images/myPic3.png";
-  } else {
         i.src = "images/myPic3.png";
+    } else if (i.src.match("images/myPic3.png")) {
+      i.src = "images/myPic4.jpg";
+  } else {
+        i.src = "images/myPic1.png";
     }
 }
 function redirectToWeb(x) {
