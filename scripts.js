@@ -1,8 +1,8 @@
 var myInterval = setInterval(slideshow, 3000);
 
 function slideshow() {
-    var i = document.getElementById("Imagey");
 
+    var i = document.getElementById("Imagey");
     if (i.src.match("images/myPic1.png")) {     
       i.src = "images/myPic2.png";
     } else if (i.src.match("images/myPic2.png")) { 
@@ -91,14 +91,16 @@ productContainers.forEach((item, i) => {
 // }
 
 function big(x) {
-
+    var body = document.body;
   x.style.backgroundColor = "orange";
   x.style.transition = "all 1s ease-in-out";
   x.style.transform = "rotate(360deg)";
   x.style.borderRadius = "50%";
   x.style.boxShadow = "10px 10px 5px grey";
-  x.style.height = "500px";
-  x.style.width = "500px";
+  if (parseInt(getComputedStyle(body).width)  > 500 ) {
+    x.style.height = "500px";
+    x.style.width = "500px";
+  }
   }
   function small(x) {
   x.style.height = "400px";
