@@ -230,7 +230,6 @@ h2 {
     margin-left: 80px;
     display: flex;
     flex-direction: row;
-    flex-flow: wrap;
     align-items: center;
 }
 
