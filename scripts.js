@@ -7,9 +7,7 @@ function slideshow() {
       i.src = "images/myPic2.png";
     } else if (i.src.match("images/myPic2.png")) { 
         i.src = "images/myPic3.png";
-    } else if (i.src.match("images/myPic3.png")) {
-      i.src = "images/myPic4.jpg";
-  } else {
+    } else {
         i.src = "images/myPic1.png";
     }
 }

@@ -228,6 +228,10 @@ h2 {
     margin: 0 15px 15px 30px;
     padding-bottom: 5px;
     margin-left: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: center;
 }
 
 .project_card h3 {
