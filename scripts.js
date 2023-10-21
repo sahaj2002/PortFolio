@@ -96,13 +96,13 @@ function big(x) {
     x.style.borderRadius = "50%";
     x.style.boxShadow = "10px 10px 5px grey";
 
-    x.style.height = "30vw";
-    x.style.width = "30vw";
+    x.style.height = "35vw";
+    x.style.width = "35vw";
 
 }
 function small(x) {
-    x.style.height = "24vw";
-    x.style.width = "24vw";
+    x.style.height = "30vw";
+    x.style.width = "30vw";
     x.style.padding = "10px";
     x.style.backgroundColor = "powderblue"
     x.style.transition = "all 3s ease-in-out";

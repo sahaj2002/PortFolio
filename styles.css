@@ -401,11 +401,10 @@ Certificate Sections
 .all-recommendations {
     display: flex;
     align-items: center;
-    margin-left: 1in;
     flex-direction: row;
     flex-flow: wrap;
     padding: 20px;
-}
+
 
 /* .recommendations h2{
     color: rgb(134, 176, 187);
