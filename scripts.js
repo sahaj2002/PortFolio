@@ -3,9 +3,9 @@ var myInterval = setInterval(slideshow, 3000);
 function slideshow() {
 
     var i = document.getElementById("Imagey");
-    if (i.src.match("images/myPic1.png")) {     
-      i.src = "images/myPic2.png";
-    } else if (i.src.match("images/myPic2.png")) { 
+    if (i.src.match("images/myPic1.png")) {
+        i.src = "images/myPic2.png";
+    } else if (i.src.match("images/myPic2.png")) {
         i.src = "images/myPic3.png";
     } else {
         i.src = "images/myPic1.png";
@@ -20,30 +20,30 @@ function redirectToWeb(x) {
             window.open("https://media.geeksforgeeks.org/courses/certificates/dbaf3a4a93f952c684768a0fab753080.pdf");
             break;
         case 3:
-            window.open("https://www.coursera.org/account/accomplishments/certificate/LC688NCZTLWK");  
+            window.open("https://www.coursera.org/account/accomplishments/certificate/LC688NCZTLWK");
             break;
         case 4:
-            window.open("https://www.coursera.org/account/accomplishments/certificate/V389EKFJPREU");    
+            window.open("https://www.coursera.org/account/accomplishments/certificate/V389EKFJPREU");
             break;
         case 5:
-            window.open("https://www.coursera.org/account/accomplishments/certificate/2WNK3SVDT2UG");    
+            window.open("https://www.coursera.org/account/accomplishments/certificate/2WNK3SVDT2UG");
             break;
         case 6:
-            window.open("https://www.hackerrank.com/certificates/iframe/cc49597d4be1");    
+            window.open("https://www.hackerrank.com/certificates/iframe/cc49597d4be1");
             break;
         case 7:
-            window.open("https://www.hackerrank.com/certificates/iframe/30dd2885ce91");  
+            window.open("https://www.hackerrank.com/certificates/iframe/30dd2885ce91");
             break;
         case 8:
-            window.open("https://www.udemy.com/certificate/UC-53571cbe-4361-4e1e-b758-4cc735dbeefe/");    
+            window.open("https://www.udemy.com/certificate/UC-53571cbe-4361-4e1e-b758-4cc735dbeefe/");
             break;
         case 9:
-            window.open("https://www.udemy.com/certificate/UC-78c580eb-bc6a-4534-9cdf-2ba6f14e8b33/");    
+            window.open("https://www.udemy.com/certificate/UC-78c580eb-bc6a-4534-9cdf-2ba6f14e8b33/");
             break;
         case 10:
-            alert("Certificate expired");   
-            break;                
-    }         
+            alert("Certificate expired");
+            break;
+    }
 }
 
 
@@ -76,7 +76,7 @@ productContainers.forEach((item, i) => {
 //   y.style.width = "56px";
 // }
 // function cardsm(y) {
-  
+
 //   border: 1px solid gray;
 //     display: block;
 //     border-radius: 6px;
@@ -90,48 +90,48 @@ productContainers.forEach((item, i) => {
 
 function big(x) {
     var body = document.body;
-  x.style.backgroundColor = "orange";
-  x.style.transition = "all 1s ease-in-out";
-  x.style.transform = "rotate(360deg)";
-  x.style.borderRadius = "50%";
-  x.style.boxShadow = "10px 10px 5px grey";
-  if (parseInt(getComputedStyle(body).width)  > 500 ) {
-    x.style.height = "500px";
-    x.style.width = "500px";
-  }
-  }
-  function small(x) {
-  x.style.height = "400px";
-  x.style.width = "400px";
-  x.style.padding = "10px";
-  x.style.backgroundColor = "powderblue"
-  x.style.transition = "all 3s ease-in-out";
-  x.style.transform = "rotate(-360deg)";
-  }
+    x.style.backgroundColor = "orange";
+    x.style.transition = "all 1s ease-in-out";
+    x.style.transform = "rotate(360deg)";
+    x.style.borderRadius = "50%";
+    x.style.boxShadow = "10px 10px 5px grey";
 
-function addRecommendation(){
+    x.style.height = "30vw";
+    x.style.width = "30vw";
+
+}
+function small(x) {
+    x.style.height = "24vw";
+    x.style.width = "24vw";
+    x.style.padding = "10px";
+    x.style.backgroundColor = "powderblue"
+    x.style.transition = "all 3s ease-in-out";
+    x.style.transform = "rotate(-360deg)";
+}
+
+function addRecommendation() {
     // Get the message of the new recommendation
     let recommendation = document.getElementById("new_recommendation");
-   
+
     if (recommendation.value != null && recommendation.value.trim() != "") {
-      console.log("New recommendation added");
-      
-      showPopup(true);
-      var element = document.createElement("div");
-      element.setAttribute("class","recommendation");
-      element.innerHTML = "\<span\>&#8220;\</span\>" + recommendation.value + "\<span\>&#8221;\</span\>";
-      // Add this element to the end of the list of recommendations
-      document.getElementById("all-recommendations").appendChild(element);
-      // Reset the value of the textarea
-      recommendation.value = "";
+        console.log("New recommendation added");
+
+        showPopup(true);
+        var element = document.createElement("div");
+        element.setAttribute("class", "recommendation");
+        element.innerHTML = "\<span\>&#8220;\</span\>" + recommendation.value + "\<span\>&#8221;\</span\>";
+        // Add this element to the end of the list of recommendations
+        document.getElementById("all-recommendations").appendChild(element);
+        // Reset the value of the textarea
+        recommendation.value = "";
     }
-  }
-  
-  function showPopup(bool) {
+}
+
+function showPopup(bool) {
     if (bool) {
-      document.getElementById('popUp').style.visibility = 'visible'
+        document.getElementById('popUp').style.visibility = 'visible'
     } else {
-      document.getElementById('popUp').style.visibility = 'hidden'
+        document.getElementById('popUp').style.visibility = 'hidden'
     }
-  }
-  
+}
+
