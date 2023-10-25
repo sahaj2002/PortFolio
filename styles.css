@@ -9,7 +9,32 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Typewriter effect */
+.typewriter-text {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #000;
+    animation: typing 1s steps(24) infinite, blink-caret 0.7s step-end infinite;
+}
 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+/* End of Typewriter effect */
 
 #Home {
     background-color: rgb(173, 193, 198);
@@ -105,7 +130,7 @@ h2 {
 
 
  .profile_image {
-    width: 24vw;
+    width: 30vw;
     border-radius: 50%;
     box-shadow: 10px 10px 5px grey;
     vertical-align: middle;
@@ -518,7 +543,7 @@ input,textarea {
 }
 
 fieldset {
-    display: flexbox;
+    display: flex;
     align-content: center;
     font-size: 25px;
     justify-content: center;
