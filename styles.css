@@ -21,7 +21,13 @@ html {
     display: flex;
     justify-content: space-between;
 }
-
+@media screen and (max-width: 768px) {
+    #Home {
+        height: 0vw;
+        padding-top: 5vw;
+        padding-bottom: 8vw;
+    }    
+}
 
 .profile_name,
 .topdiv {
@@ -46,6 +52,7 @@ html {
     margin-top: 2vw;
     display: inline-block;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -55,7 +62,8 @@ html {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(173, 193, 198);;
+    background-color: rgb(173, 193, 198);
+    ;
     box-shadow: 0 0.8vw 1.6vw rgba(0, 0, 0, 0.1);
     border-radius: 0.5vw;
 }
@@ -75,6 +83,7 @@ html {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .dropdown-item:hover {
     text-decoration: underline;
 }
@@ -110,6 +119,18 @@ html {
     width: fit-content;
     color: #495057;
 }
+@media screen and (max-width: 768px) {
+    .profile_name {
+        font-size: 2.5vw;
+    }
+    .topmenu {
+        font-size: 2vw;
+    }
+    .profile_name .contact_info {
+        font-size: 2vw;
+    }
+ 
+}
 
 .contact_info img {
     width: 1.5vw;
@@ -135,7 +156,7 @@ h2 {
     box-shadow: 10px 10px 5px grey;
     vertical-align: middle;
     margin-left: 30px;
-    
+
 }
 
 
@@ -157,11 +178,6 @@ h2 {
     color: rgb(134, 176, 187);
 }
 
-@media screen and (max-width: 768px) {
-    #about-me h1 {
-        font-size: 8vw;
-    }
-}
 
 
 
@@ -173,6 +189,9 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+    #about-me h1 {
+        font-size: 8vw;
+    }
     #about-me p {
         font-size: 3vw;
     }
@@ -198,8 +217,15 @@ h2 {
     max-height: 40vw;
     overflow-y: auto;
 }
+@media screen and (max-width: 768px) {
+    .all_skills {
+        max-height: 80vw;
+    }
+}
+
 .all_skills::-webkit-scrollbar {
-    display: none; /* Hide scrollbar */
+    display: none;
+    /* Hide scrollbar */
 }
 
 .skill {
@@ -558,6 +584,7 @@ fieldset {
     background-color: #f9f9f9;
     flex-direction: column;
 }
+
 legend {
     font-weight: bold;
 }
