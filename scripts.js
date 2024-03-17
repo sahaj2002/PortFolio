@@ -11,40 +11,7 @@ function slideshow() {
         i.src = "images/myPic1.png";
     }
 }
-function redirectToWeb(x) {
-    switch (x) {
-        case 1:
-            window.open("https://www.coursera.org/account/accomplishments/certificate/HL8QWQRND8JU");
-            break;
-        case 2:
-            window.open("https://media.geeksforgeeks.org/courses/certificates/dbaf3a4a93f952c684768a0fab753080.pdf");
-            break;
-        case 3:
-            window.open("https://www.coursera.org/account/accomplishments/certificate/LC688NCZTLWK");
-            break;
-        case 4:
-            window.open("https://www.coursera.org/account/accomplishments/certificate/V389EKFJPREU");
-            break;
-        case 5:
-            window.open("https://www.coursera.org/account/accomplishments/certificate/2WNK3SVDT2UG");
-            break;
-        case 6:
-            window.open("https://www.hackerrank.com/certificates/iframe/cc49597d4be1");
-            break;
-        case 7:
-            window.open("https://www.hackerrank.com/certificates/iframe/30dd2885ce91");
-            break;
-        case 8:
-            window.open("https://www.udemy.com/certificate/UC-53571cbe-4361-4e1e-b758-4cc735dbeefe/");
-            break;
-        case 9:
-            window.open("https://www.udemy.com/certificate/UC-78c580eb-bc6a-4534-9cdf-2ba6f14e8b33/");
-            break;
-        case 10:
-            alert("Certificate expired");
-            break;
-    }
-}
+
 
 
 // Certificate

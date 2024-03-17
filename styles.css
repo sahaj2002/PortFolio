@@ -226,7 +226,7 @@ h2 {
 
 .all_skills::-webkit-scrollbar {
     display: none;
-    /* Hide scrollbar */
+    
 }
 
 .skill {
@@ -323,6 +323,7 @@ h2 {
     overflow-x: auto;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    ;
 }
 
 .certificate-card {
@@ -331,11 +332,13 @@ h2 {
     max-width: 40vw; 
     height: auto; 
     margin-right: 2vw;
+    
 }
 
 .certificate-image {
     position: relative;
     width: 100%;
+    aspect-ratio: 3/2;
     overflow: hidden;
 }
 
